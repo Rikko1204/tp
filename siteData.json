@@ -3,15 +3,14 @@
   "pages": [
     {
       "src": "AboutUs.md",
-      "title": "About Us",
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "cheah-tze-juen": "Cheah Tze Juen",
+        "tan-hong-jun": "Tan Hong Jun",
+        "loh-jin-hun": "Loh Jin Hun",
+        "chen-kuan-min": "Chen Kuan Min",
+        "guo-yuhao": "Guo Yuhao"
       },
       "headingKeywords": {}
     },
@@ -136,10 +135,50 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/cheahtj.md",
+      "title": "Cheah Tze Juen's Project Portfolio Page",
+      "headings": {
+        "project-aronapro": "Project: AronaPro"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/hjuntan.md",
+      "title": "Tan Hong Jun's Project Portfolio Page",
+      "headings": {
+        "project-aronapro": "Project: AronaPro"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/ragnapop.md",
+      "title": "Loh Jin Hun's Project Portfolio Page",
+      "headings": {
+        "project-aronapro": "Project: AronaPro"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/rikko1204.md",
+      "title": "Chen Kuan Min's Project Portfolio Page",
+      "headings": {
+        "project-aronapro": "Project: AronaPro"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/ringoftheking.md",
+      "title": "Guo YuHao Project Portfolio Page",
+      "headings": {
+        "project-aronapro": "Project: AronaPro"
       },
       "headingKeywords": {}
     },
