@@ -59,6 +59,6 @@ with(this){return _c('p',[_v("["),_c('a',{attrs:{"href":"http://github.com/Ringo
 with(this){return _c('ul',[_c('li',[_v("Role: Deliverables and deadlines")]),_v(" "),_c('li',[_v("Responsibilities: Ensures that the team is focussed on the individual task and is able to deliver the intended feature")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Wed, 6 Mar 2024, 21:31:59 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Thu, 7 Mar 2024, 20:03:16 GMT+8]")])])])}
 }];
   
