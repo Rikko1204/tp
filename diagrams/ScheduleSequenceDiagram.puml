@@ -6,6 +6,7 @@ box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":ScheduleCommandParser" as ScheduleCommandParser LOGIC_COLOR
+participant ":ParserUtil" as ParserUtil LOGIC_COLOR
 participant "s:ScheduleCommand" as ScheduleCommand LOGIC_COLOR
 participant "r:CommandResult" as CommandResult LOGIC_COLOR
 end box
@@ -14,10 +15,10 @@ box Model MODEL_COLOR_T1
 participant "m:Model" as Model MODEL_COLOR
 end box
 
-[-> LogicManager : execute("schedule...")
+[-> LogicManager : execute("schedule id/E1234567 s/15-10-2024")
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand("schedule...")
+LogicManager -> AddressBookParser : parseCommand("schedule id/E1234567 s/15-10-2024")
 activate AddressBookParser
 
 create ScheduleCommandParser
@@ -27,14 +28,31 @@ activate ScheduleCommandParser
 ScheduleCommandParser --> AddressBookParser
 deactivate ScheduleCommandParser
 
-AddressBookParser -> ScheduleCommandParser : parse("nusId, ...")
+AddressBookParser -> ScheduleCommandParser : parse("id/E1234567 s/15-10-2024")
 activate ScheduleCommandParser
+
+create ParserUtil
+ScheduleCommandParser -> ParserUtil
+
+activate ParserUtil
+ParserUtil ---> ScheduleCommandParser
+deactivate ParserUtil
+
+ScheduleCommandParser -> ParserUtil : parseNusId("E01234567")
+activate ParserUtil
+ParserUtil ---> ScheduleCommandParser
+deactivate ParserUtil
+
+ScheduleCommandParser -> ParserUtil : parseSchedule("15-10-2024")
+activate ParserUtil
+ParserUtil ---> ScheduleCommandParser
+deactivate ParserUtil
 
 create ScheduleCommand
 ScheduleCommandParser -> ScheduleCommand : ScheduleCommand(nusId, schedule, remark)
 activate ScheduleCommand
 
-ScheduleCommand --> ScheduleCommandParser : s
+ScheduleCommand --> ScheduleCommandParser :
 deactivate ScheduleCommand
 
 ScheduleCommandParser --> AddressBookParser : s

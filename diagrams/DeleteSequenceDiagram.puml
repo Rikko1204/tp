@@ -15,10 +15,10 @@ box Model MODEL_COLOR_T1
 participant "m:Model" as Model MODEL_COLOR
 end box
 
-[-> LogicManager : execute("delete E01234567")
+[-> LogicManager : execute("delete id/E01234567")
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand("delete E01234567")
+LogicManager -> AddressBookParser : parseCommand("delete id/E01234567")
 activate AddressBookParser
 
 create DeleteCommandParser
