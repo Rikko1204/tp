@@ -11,8 +11,8 @@ start
 
 if () then ([valid command])
     :Execute add command;
-    :Edit person's details;
-    :Save modified person in AddressBook;
+    :Create instances of each field;
+    :Add person to AddressBook;
     :Display success message;
 else ([else])
     :Display error message;

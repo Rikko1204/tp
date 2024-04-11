@@ -12,12 +12,12 @@ start
 'diamond we place it as the true branch instead.
 
 if () then ([valid command])
-    :Parse schedule command;
     :Execute schedule command;
-    :Save modified person
-          AddressBook;
+    :Edit person's details;
+    :Save modified person in AddressBook;
     :Display success message;
 else ([else])
+    :Display error message;
 endif
 stop
 @enduml

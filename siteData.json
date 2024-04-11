@@ -51,9 +51,9 @@
         "storage-component": "Storage component",
         "common-classes": "Common classes",
         "implementation": "Implementation",
-        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
+        "add-feature": "Add feature",
         "schedule-feature": "Schedule feature",
-        "schedule-feature-2": "Schedule feature",
+        "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
@@ -129,6 +129,7 @@
         "archiving-data-files-coming-in-v2-0": "Archiving data files [coming in v2.0]",
         "faq": "FAQ",
         "known-issues": "Known issues",
+        "planned-enhancements": "Planned enhancements",
         "command-summary": "Command summary"
       },
       "headingKeywords": {}
